@@ -1,8 +1,8 @@
 import os
 
 settings = {
-    'host': os.environ.get('ACCOUNT_URI'),
-    'master_key': os.environ.get('ACCOUNT_KEY'),
-    'database_id': os.environ.get('COSMOS_DATABASE'),
-    'container_id': os.environ.get('COSMOS_CONTAINER'),
+    'host': os.environ.get('ACCOUNT_URI','https://acctdbadmin.documents.azure.com:443/'),
+    'master_key': os.environ.get('ACCOUNT_KEY','6NAJ8BbVV0qxY8MgJXbsK2h4vrSb1UiTYh74gsrpkqJiqEUXSfMBG7b97i2vdngij7ee4wsEAqtCA5DSSenRIw=='),
+    'database_id': os.environ.get('COSMOS_DATABASE','ToDoList'),
+    'container_id': os.environ.get('COSMOS_CONTAINER','ToDoList'),
 }
